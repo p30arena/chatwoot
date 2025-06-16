@@ -1,4 +1,4 @@
-const fs = require('fs');Add commentMore actions
+const fs = require('fs');
 const path = require('path');
 
 function processJsonFiles(directory, search, replacement) {
