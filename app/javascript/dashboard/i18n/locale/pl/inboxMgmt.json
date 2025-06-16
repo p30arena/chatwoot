@@ -11,7 +11,7 @@
     "CREATE_FLOW": {
       "CHANNEL": {
         "TITLE": "Wybierz kanał",
-        "BODY": "Wybierz dostawcę, którego chcesz zintegrować z Chatwoot."
+        "BODY": "Wybierz dostawcę, którego chcesz zintegrować z TikoChat."
       },
       "INBOX": {
         "TITLE": "Utwórz skrzynkę odbiorczą",

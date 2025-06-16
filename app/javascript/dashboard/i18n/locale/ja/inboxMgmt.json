@@ -11,7 +11,7 @@
     "CREATE_FLOW": {
       "CHANNEL": {
         "TITLE": "チャンネルを選択",
-        "BODY": "Chatwootと統合するプロバイダを選択してください。"
+        "BODY": "TikoChatと統合するプロバイダを選択してください。"
       },
       "INBOX": {
         "TITLE": "受信トレイを作成",

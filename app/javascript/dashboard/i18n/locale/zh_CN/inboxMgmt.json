@@ -11,7 +11,7 @@
     "CREATE_FLOW": {
       "CHANNEL": {
         "TITLE": "选择频道",
-        "BODY": "选择你想要与Chatwoot 集成的提供商。"
+        "BODY": "选择你想要与TikoChat 集成的提供商。"
       },
       "INBOX": {
         "TITLE": "新增收件箱",

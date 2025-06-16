@@ -37,7 +37,7 @@
       },
       "INTERFACE_SECTION": {
         "TITLE": "界面",
-        "NOTE": "自定义您的 Chatwoot 仪表板的外观和感觉。",
+        "NOTE": "自定义您的 TikoChat 仪表板的外观和感觉。",
         "FONT_SIZE": {
           "TITLE": "字体大小",
           "NOTE": "根据您的偏好调整仪表板中的文本大小。",

@@ -313,8 +313,8 @@
       }
     },
     "TABLE": {
-      "LOADING_MESSAGE": "טוען מאמרים...",
       "404": "אין מאמרים שתואמים לחיפוש שלך 🔍",
+      "LOADING_MESSAGE": "טוען מאמרים...",
       "NO_ARTICLES": "אין מאמרים זמינים",
       "HEADERS": {
         "TITLE": "כותרת",
@@ -689,7 +689,7 @@
       "CONFIRM_BUTTON_LABEL": "צור",
       "NAME": {
         "LABEL": "שם",
-        "PLACEHOLDER": "User Guide | Chatwoot",
+        "PLACEHOLDER": "User Guide | TikoChat",
         "MESSAGE": "Choose an name for your portal.",
         "ERROR": "שם שדה חובה"
       },

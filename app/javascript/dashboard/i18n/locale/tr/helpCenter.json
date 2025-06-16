@@ -313,8 +313,8 @@
       }
     },
     "TABLE": {
-      "LOADING_MESSAGE": "Makaleler yükleniyor...",
       "404": "Arama kriterlerinize uygun makale bulunamadı 🔍",
+      "LOADING_MESSAGE": "Makaleler yükleniyor...",
       "NO_ARTICLES": "Uygun makale bulunmamaktadır",
       "HEADERS": {
         "TITLE": "Başlık",
@@ -689,7 +689,7 @@
       "CONFIRM_BUTTON_LABEL": "Yarat",
       "NAME": {
         "LABEL": "İsim",
-        "PLACEHOLDER": "User Guide | Chatwoot",
+        "PLACEHOLDER": "User Guide | TikoChat",
         "MESSAGE": "Choose an name for your portal.",
         "ERROR": "Ad gerekli"
       },

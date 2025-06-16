@@ -313,8 +313,8 @@
       }
     },
     "TABLE": {
-      "LOADING_MESSAGE": "جاري تحميل المقالات...",
       "404": "لا توجد مقالات تطابق بحثك 🔍",
+      "LOADING_MESSAGE": "جاري تحميل المقالات...",
       "NO_ARTICLES": "لا توجد مقالات متوفرة",
       "HEADERS": {
         "TITLE": "العنوان",
@@ -689,7 +689,7 @@
       "CONFIRM_BUTTON_LABEL": "إنشاء",
       "NAME": {
         "LABEL": "الاسم",
-        "PLACEHOLDER": "User Guide | Chatwoot",
+        "PLACEHOLDER": "User Guide | TikoChat",
         "MESSAGE": "Choose an name for your portal.",
         "ERROR": "الاسم مطلوب"
       },

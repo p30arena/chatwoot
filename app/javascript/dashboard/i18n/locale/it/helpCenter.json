@@ -313,8 +313,8 @@
       }
     },
     "TABLE": {
-      "LOADING_MESSAGE": "Caricamento articoli...",
       "404": "Nessun articolo corrisponde alla tua ricerca 🔍",
+      "LOADING_MESSAGE": "Caricamento articoli...",
       "NO_ARTICLES": "Non ci sono articoli disponibili",
       "HEADERS": {
         "TITLE": "Titolo",
@@ -689,7 +689,7 @@
       "CONFIRM_BUTTON_LABEL": "Crea",
       "NAME": {
         "LABEL": "Nome",
-        "PLACEHOLDER": "User Guide | Chatwoot",
+        "PLACEHOLDER": "User Guide | TikoChat",
         "MESSAGE": "Choose an name for your portal.",
         "ERROR": "Il nome è obbligatorio"
       },
