@@ -41,11 +41,9 @@ services:
     restart: always
     volumes:
       - postgres_data:/var/lib/postgresql/data
+    env_file: .env
     environment:
       - POSTGRES_DB=chatwoot
-      - POSTGRES_USER=postgres
-      # Please provide your own password.
-      - POSTGRES_PASSWORD=
     networks:
       - app-network
 
