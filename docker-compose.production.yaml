@@ -46,6 +46,8 @@ services:
       - POSTGRES_USER=postgres
       # Please provide your own password.
       - POSTGRES_PASSWORD=
+    networks:
+      - app-network
 
   redis:
     image: redis:alpine
@@ -54,6 +56,8 @@ services:
     env_file: .env
     volumes:
       - redis_data:/data
+    networks:
+      - app-network
 
 volumes:
   storage_data:
