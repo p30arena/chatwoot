@@ -35,6 +35,9 @@ services:
       - INSTALLATION_ENV=docker
     command: ['bundle', 'exec', 'sidekiq', '-C', 'config/sidekiq.yml']
     restart: always
+    extra_hosts:
+      - "hub.chatwoot.com:127.0.0.1"
+      - "www.chatwoot.com:127.0.0.1"
 
   postgres:
     image: pgvector/pgvector:pg16
