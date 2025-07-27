@@ -48,3 +48,35 @@ The mechanism responsible for reverting your license changes is primarily locate
 4.  Finally, the [`reconcile_premium_features`](enterprise/app/services/internal/reconcile_plan_config_service.rb:52) method is called to disable any enterprise-only features in your accounts.
 
 In summary, the `Enterprise::Internal::CheckNewVersionsJob` periodically fetches your official license status, and if it's "community," the `Internal::ReconcilePlanConfigService` reverts your manual database changes to their default state. To prevent this, you would need to disable or modify the execution of this job or the logic within the service.
+
+---
+
+## Workaround for Podman Compose
+
+To prevent the license-reverting mechanism when running Chatwoot with Podman Compose, you can modify the `docker-compose.production.yaml` file to block network access from the `sidekiq` container to Chatwoot's servers.
+
+This is achieved by adding an `extra_hosts` configuration to the `sidekiq` service, which adds entries to the container's `/etc/hosts` file, redirecting the Chatwoot domains to localhost.
+
+### Changes in `docker-compose.production.yaml`
+
+```yaml
+  sidekiq:
+    <<: *base
+    depends_on:
+      - postgres
+      - redis
+    environment:
+      - NODE_ENV=production
+      - RAILS_ENV=production
+      - INSTALLATION_ENV=docker
+    command: ['bundle', 'exec', 'sidekiq', '-C', 'config/sidekiq.yml']
+    restart: always
+    extra_hosts:
+      - "hub.chatwoot.com:127.0.0.1"
+      - "www.chatwoot.com:127.0.0.1"
+```
+
+After applying this change, restart the services using the following command:
+
+```bash
+podman-compose -f docker-compose.production.yaml up -d --force-recreate
