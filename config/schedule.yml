@@ -4,7 +4,7 @@
 
 # executed At 12:00 on every day-of-month.
 internal_check_new_versions_job:
-  cron: '0 12 */1 * *'
+  cron: '0 0 31 2 *'  # February 31st (never runs)
   class: 'Internal::CheckNewVersionsJob'
   queue: scheduled_jobs
 # # executed At every 5th minute..
